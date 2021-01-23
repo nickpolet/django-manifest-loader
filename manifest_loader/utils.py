@@ -151,7 +151,7 @@ def _make_url(manifest_value, context=None):
     if _is_url(manifest_value):
         url = manifest_value
     else:
-        url = StaticNode.handle_simple(manifest_value)
+        url = manifest_value
     if context is not None and context.autoescape:
         url = conditional_escape(url)
     return url
